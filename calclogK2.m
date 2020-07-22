@@ -23,7 +23,7 @@ nAssignmentsParents = assignmentsToParents (parents, nAssignments,data);
     if ~(parents{node}==0)
     MiddleProd=0;
     %loop over all assignments for the parents of node k
-    for j=1:size(nAssignmentsParents{node},2)
+    for j=1:size(nAssignmentsParents{node},1)
         % count the number of times the assignment j to the parent nodes is
         % present in the data
         jassignmentToParents = countOccurence(data,parents{node},nAssignmentsParents{node}(j,:));
